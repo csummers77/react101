@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel" src="Card.js"></script>
+    <script type="text/babel" src="data.js"></script>
+    <script type="text/babel">
+    const app = <div className="row">
+                <Card title="React. From the start" />
+                <Card title="Unity Game Development" />
+                <Card title="Apache Kafka Series" />
+                <Card title="Music Production in logic Pro X" />
+            </div>
+            console.log(app)
+            const root = document.getElementById('root');
+            console.dir(root);
+    </script>
+</body>
+</html>
